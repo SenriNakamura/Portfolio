@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senri Nakamura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+    <link href="/css/main.css?v=1" media="screen,print" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="https://sites.tufts.edu/solarvp/" target="_blank">
+            <img src="images/transparent.png" class="logo">
+            </a>
+            <ul id="sidemenu">
+                <div id="top-part">
+                <li><i class="fas fa-times" onclick="closemenu()"></i></li>
+                </div>
+                <li><a href="#header"><b>Home</b></a></li>
+                <li class="dropdown">
+                    <a href="#about" onclick="toggleDropdown()"><b>About</b></a>
+                    <ul class="dropdown-content">
+                        <li><a href="images/Resume.pdf" target="_blank"><b>Resume</b></a></li>
+                    </ul>
+                </li>
+                <li><a href="images/Resume.pdf" target="_blank" id ="resume_phone"><b>Resume</b></a></li>
+                <li class="dropdown">
+                    <a href="#Project"  onclick="toggleDropdown()"><b>Portfolio</b></a>
+                    <ul class="dropdown-content">
+                        <li><a href="lamination.html"><b>Solar Array</b></a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" id="bottom"><b>Contact</b></a></li>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>B.S. Electrical Engineering @ Tufts</p>
+            <h1>Hi, I'm <span>Senri</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/My_Face.jpg">
+                <div class="tab-titles">
+                    <p class="tab-links active-link-about" onclick="opentabAbout('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentabAbout('work experience')">Work</p>
+                    <p class="tab-links" onclick="opentabAbout('leadership experience')">Leadership</p>
+                    <p class="tab-links" onclick="opentabAbout('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab-about" id="skills">
+                    <ul>
+                        <li> <span class="company">Technical Expertise</span><span class="skills"><br><strong>Languages:</strong> IEC 6113-3(LAD, FBD, SCL, STL), C, C++, Python, VHDL, Verilog
+                        <br><strong>Software:</strong> Siemens TIA Portal/STEP7, SCADA, HMI, CODESYS, Node-RED, Grafana
+                        <br><strong>Protocol:</strong> Modbus RTU/TCP, RS-232/422/485, CAN, Ethernet/IP, Profibus, NTP sync, UART, I
+                        2C</span></li>
+
+                        <li> <span class="company">Project/Stakeholder Management</span><span class="skills"><br>Making final executive decisions among 13 executives, and managing a project budget of over $200,000. Spearheading sponsorship and fundraising, and collaborating with over 45 sponsors, professors, and university administration.</span></li>
+                        
+                        <li> <span class="company">Entrepreneurial Mindset and Innovation</span><span class="skills"><br>Developed a minimum viable product (MVP) for a 50+ age HR platform at a Fortune 500 company using Agile methodology, conducted market research with over 100 customer interviews, secured executive buy-in, and executed startup ideation and product development.</span></li>
+                        
+                        <li> <span class="company">Communication and Outreach</span><span class="skills"><br>Handling marketing and sponsorship proposals, delivering public presentations, creating technical documentation and reports, and collaborating with over 40 peer colleges.</span></li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="work experience">
+                    <ul>
+                        <li>
+                            <span class="company">Interstellar Technologies Inc.</span> <span class="location">Tokyo, JPN</span><br>
+                            <em>Automation Engineer Intern</em> <span class="dates">June 2025 – Aug 2025</span><br><em>Avionics Engineer Intern</em> <span class="dates">June 2025 – Aug 2025</span>
+                        </li>
+                        <li>
+                            <span class="company">Eco-Pork Inc.</span> <span class="location">Tokyo, JPN</span><br>
+                            <em>Data (Contract)</em> <span class="dates">May 2025 – July 2025</span>
+                        </li>
+                        <li>
+                            <span class="company">Tufts University</span> <span class="location">Medford, MA</span><br>
+                            <em>Engineering Ambassador</em> <span class="dates">Apr 2025 – Present</span><br><em>Residential Assistant</em> <span class="dates">Aug 2024 – Present</span>
+                        </li>
+                        <li>
+                            <span class="company">Recruit Holdings Co., Ltd.</span> <span class="location">Tokyo, JPN</span><br>
+                            <em>Product Manager Intern</em> <span class="dates">Jul 2024 – Aug 2024</span>
+                        </li>
+                        <li>
+                            <span class="company">Nano Lab – Tufts University</span> <span class="location">Medford, MA</span><br>
+                            <em>Undergraduate Research Assistant</em> <span class="dates">Apr 2023 – Sep 2023</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="leadership experience">
+                    <ul>
+                        <li>
+                            <span class="company">Tufts Solar Vehicle Project (TSVP)</span> <span class="location">Medford, MA</span><br><em>Senior Advisor</em><span class="dates">Aug 2025 – Present</span><br>
+                            <em>President</em> <span class="dates">Aug 2024 – Aug 2025</span><br><em>Electrical Co-Lead, Founding Member (1 of 6)</em> <span class="dates">Sep 2023 – Aug 2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="company">Tufts University</span><span class="position"><br>Senior majoring in Electrical Engineering<br>Dean's List all semesters</span><span class="dates">(Sep 2022 - May 2026)</span></li>
+                        
+                        <li><span class="company">Point Grey Secondary School</span><span class="position"><br>High School Diploma<br>Grade: 96%</span><span class="dates">(Jan 2018 - June 2022)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-about" id="about-me">About Me</h1>
+                <p><span class="killer"><b>I turn ambition into results.</b></span> When I moved to Canada at 13, I didn’t speak English and was placed in a 1st-grade English class. During my college applications, I faced rejection from every advising source, but persistence paid off. As a sophomore transfer to engineering, I joined the Tufts Solar Vehicle Project and expanded the team from eight students to a fully functioning operation. By reaching out to professionals, faculty, and peers, I completed the entire solar array manufacturing process in six months, using only 0.5% of the budget typically required by conventional methods.</p> 
+                <h1 class="sub-title">Leading with Innovation and Collaboration</h1>
+                <p>As President of the Tufts Solar Vehicle Project, I lead a multidisciplinary team of 130+ students from diverse technical backgrounds. By focusing on collaboration and community, I recognize people’s strengths and foster teamwork across the Mechanical, Electrical, and Business teams. Whether it’s through innovating with advanced materials or tackling complex electrical systems, I encourage our team to challenge themselves, continuously learn, and bring diverse perspectives to fuel our success. Together, we are building Tufts' first road-legal, race-competitive solar car, contributing to a more sustainable future.</p>
+                <h1 class="sub-title">Engineering with Purpose</h1>
+                <p>From developing bioelectrical sensing solutions at Tufts NanoLab using triboelectric nanogenerators to leading the creation of the only MVP greenlit for development at Recruit Holdings, where I managed a cross-functional team and secured executive buy-in after 100+ customer interviews, my focus is on creating products that add value, solve environmental challenges, and are viable for businesses. I bring expertise in agile project management (Scrum, Kanban, sprint planning), Lamination, C, FPGA, VHDL, BOM, and Circuit Design, gained through both coursework and projects.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Biggest Project -->
+<div id="Project">
+    <div class="container">
+        <div id="title_proj">
+            <h1 class="sub-title">Largest Project Experience</h1> 
+            <a href="lamination.html">
+            <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/solar_panel_complete.jpg">
+                <div class="tab-titles">
+                    <p class="tab-links active-link-project" onclick="opentabProject('impact')">Impact</p>
+                    <p class="tab-links" onclick="opentabProject('Workshops')">Workshops</p>
+                </div>
+                <div class="tab-content active-tab-project" id="impact">
+                    <ul>
+                        <li> <span class="company">Technical Expertise</span><span class="impact"><br>Agile Project Management, SWOT, Circuit Design, Solar Array Lamination</span></li>
+                        
+                        <li> <span class="company">Communication and Outreach</span><span class="impact"><br>Hosted educational workshops, Negotiated multiple manufacturers for sponsorship, Managed public presentations, Maintained active social media</span></li>
+                        
+                        <li> <span class="company">Skills Development for Team Members</span><span class="impact"><br>Hands-on training in solar array manufacturing, Technical skill-building workshops, Project management skill development, and Opportunities for cross-functional collaboration</span></li>
+                        
+                        <li> <span class="company">Partners and Donors</span><span class="impact"><br>Thank you for your support: IDEA Lab (space), Maxeon (solar cells, interconnects, Front & Back sheets, EVA), Nolop (Tools), Bray (Tools)</span></li>
+                    </ul>
+                </div> 
+                <div class="tab-content" id="Workshops">
+                    <ul>
+                        <li> <span class="company">Solar Array Manufacturing Workshops</span><span class="skills"><br>Led hands-on workshops covering the entire solar array manufacturing process, including soldering cells, performing EL and IV testing, pre-shrinking materials, and lamination. Ensured team members gained practical skills in solar technology and contributed directly to the production of vehicle components.</span></li>
+                        
+                        <li><span class="company">Collaborations with Industry Partners</span><span class="skills"><br>Organized and facilitated sessions with industry experts, including Maxeon, to provide team members with real-world insights and networking opportunities. Strengthened technical expertise and industry knowledge through direct interactions with professionals in the renewable energy field.</span></li>
+                        
+                        <li><span class="company">Public Engagements and Presentations</span><span class="skills"><br>Coordinated public demonstrations and educational sessions, engaging with the community</span></li>
+                    </ul>
+                </div>                              
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-about" id="about-me">Solar Array Manufacturing</h1>
+                <div id="Solar_disc">
+                <p>As co-Electrical Lead of the Tufts Solar Vehicle Project (TSVP), I led a team of 4 to develop a machine that streamlined the production of solar panels, which were essential for powering our solar vehicle. By building our own testing equipment and workspace, <span class="killer"><b>we reduced costs by 99.95%</b> </span>and completed the project in just four months. Our team produced high-quality solar panels to maximize the vehicle’s performance, all while staying within a limited budget and spending only an additional $376 beyond sponsored materials.</p> 
+                </div>
+                <h1 class="sub-title">Engineering and System Design</h1>
+                <div class="Project_pics">
+                    <div class="cell">
+                        <img src="images/cell_report.png">
+                        <P>Technical Report</P>
+                    </div>
+                    <div class="Elec_Syst">
+                        <img src="images/Elec_Syst.png">
+                        <P>Electrical System</P>
+                    </div>
+                    <div class="laminator">
+                        <img src="images/laminator.jpg">
+                        <P>Lamination Machine</P>
+                    </div>
+                </div>
+
+                <h1 class="sub-title">Project Planning and Execution</h1>
+                <div class="Project_pics">
+                    <div class="cell">
+                        <img src="images/breakdown_str.png">
+                        <P>Project Structure</P>
+                    </div>
+                    <div class="Elec_Syst">
+                        <img src="images/gantt.png">
+                        <P>Gantt Chart</P>
+                    </div>
+                    <div class="laminator">
+                        <img src="images/item_budget.png">
+                        <P>Itemized Budget</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Smaller Projects</h1>
+        <div class="scroll-container">
+            <button class="scroll-btn left" 
+            onclick="scrollToLeft()">‹</button>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/OTA.png">
+                <div class="layer">
+                    <h3>An Ultra-Low-Power CMOS OTA for Capacitive-Touch Sensing in Wearable Interfaces</h3>
+                    <p>Designed an ultra-low-power CMOS operational transconductance amplifier (OTA) for capacitive-touch sensing in wearable interfaces. Implemented in XFAB 180nm CMOS, achieving 57 dB DC gain, ~20 MHz GBW, and 180 µW power. Signed an NDA with XFAB, so confidential process details cannot be disclosed. Completed as a final project for EE147 – Analog & Mixed Signal CMOS Design.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/final-bot.png">
+                <div class="layer">
+                    <h3>Autonomous Color-Tracking Bot: Junior Design Final Project</h3>
+                    <p>A robotic vehicle integrating Arduino-based color sensing, motor control, and obstacle detection to autonomously navigate a test track. Click to see the detailed report.</p>
+                    <a href="images/Final Documentation & Schematics.pdf" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/EE14_Final_Project.png">
+                <div class="layer">
+                    <h3>Soil Moisture Sensor with auditory feedback</h3>
+                    <p>A real-time soil moisture detection system with auditory feedback. Click to see the detailed report.</p>
+                    <a href="https://github.com/SenriNakamura/Automatic-Soil-Moisture-Sensor-with-Auditory-Feedback" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/auto-bites.jpg">
+                <div class="layer">
+                    <h3>Automated Bites - Instagram Content Automation</h3>
+                    <p>Automation bot designed to simplify cooking journaling. Automates the entire workflow from image retrieval, analysis, caption generation, and Instagram posting using several APIs.</p>
+                    <a href="https://github.com/SenriNakamura/Automated-Bites" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pulse_oxi.png">
+                <div class="layer">
+                    <h3>Pulse Oximeter Sensor Stabilization using Feedback Control</h3>
+                    <p>A pulse oximeter for precise blood oxygen monitoring. Click to see the detailed report.</p>
+                    <a href="images/Lab_4_EE21.pdf" target="_blank" download=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/EE23 Final Project.png">
+                <div class="layer">
+                    <h3>Analyzing a Spring-Damper System in Earthquake Dynamics</h3>
+                    <p>A mathematical model to analyze buildings' dynamic response during earthquakes. Click to see the detailed report.</p>
+                    <a href="images/EE23_Final_Project.pdf" target="_blank" download=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://github.com/SenriNakamura/FPGA_snake_game/assets/112661390/937b6a59-5b7e-4394-9746-0bbe2dc1ff62" alt="FPGA Snake Game GIF">
+                <div class="layer">
+                    <h3>FPGA SNAKE GAME</h3>
+                    <p>FPGA SNAKE GAME implemented in VHDL. Click to see the detailed report.</p>
+                    <a href="https://github.com/SenriNakamura/FPGA_snake_game" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-btn right" 
+        onclick="scrollToRight()" >›</button>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> senrinakamura60@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+1 781 539-3225</p>
+                <div class="social-icons">
+                    
+                    <a href="https://www.linkedin.com/in/senri-nakamura-b22854242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    
+    
+    const scrollContainer = document.querySelector('.work-list');
+    let scrollInterval;
+    
+    // Scroll left by a certain amount each time button is clicked
+    function scrollToLeft() {
+        //console.log("left");
+        scrollContainer.scrollBy({ left: -800, behavior: 'smooth' });
+    }
+
+    // Function to start continuous scrolling in the specified direction
+    function scrollToRight() {
+        //console.log("right");
+    scrollContainer.scrollBy({ left: 800, behavior: 'smooth' });
+    }
+
+    
+
+    function opentabAbout(tabName) 
+    {
+    var tablinks = document.querySelectorAll("#about .tab-links");
+    var tabcontents = document.querySelectorAll("#about .tab-contents");
+    
+    tablinks.forEach((tablink) => tablink.classList.remove("active-link-about"));
+    tabcontents.forEach((tabcontent) => tabcontent.classList.remove("active-tab-about"));
+
+    event.currentTarget.classList.add("active-link-about");
+    document.getElementById(tabName).classList.add("active-tab-about");
+    }
+
+    function opentabProject(tabName) 
+    {
+    var tablinks = document.querySelectorAll("#Project .tab-links");
+    var tabcontents = document.querySelectorAll("#Project .tab-content");
+    
+
+    tablinks.forEach((tablink) => tablink.classList.remove("active-link-project"));
+    tabcontents.forEach((tabcontent) => tabcontent.classList.remove("active-tab-project"));
+
+    event.currentTarget.classList.add("active-link-project");
+    document.getElementById(tabName).classList.add("active-tab-project");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0";}
+    function closemenu() { sidemenu.style.right = "-200px";}
+
+    function toggleDropdown() {
+        var dropdownContent = document.querySelector('.dropdown-content');
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else { dropdownContent.style.display = 'block';}}
+</script>
+<script type="text/javascript" src="your/js/path/file.js?v=1"></script>
+</body>
+</html>
