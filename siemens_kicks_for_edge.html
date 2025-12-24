@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks for Edge Hackathon – Senri Nakamura</title>
+    <link rel="stylesheet" href="style_siemens.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="header">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="images/45sec_KicksForEdge_SM_Teaser_v1.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="images/transparent.png" class="logo"></a>
+            <ul id="sidemenu">
+                <div id="top-part"><li><i class="fas fa-times" onclick="closemenu()"></i></li></div>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li class="dropdown">
+                    <a href="index.html"><b>About</b></a>
+                    <ul class="dropdown-content">
+                        <li><a href="images/Resume_v2.pdf" target="_blank"><b>Resume</b></a></li>
+                    </ul>
+                </li>
+                <li><a href="images/Resume_v2.pdf" target="_blank" id="resume_phone"><b>Resume</b></a></li>
+                <li class="dropdown">
+                    <a href="#Project"  onclick="toggleDropdown()"><b>Portfolio</b></a>
+                    <ul class="dropdown-content">
+                        <li><a href="lamination.html"><b>Solar Array</b></a></li>
+                        <li><a href="siemens_kicks_for_edge.html"><b>Siemens Hackathon</b></a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text-proj">
+            <p>November 2025 – Munich, Germany</p>
+            <h1>Siemens Kicks for Edge Hackathon</h1>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="about-lami">
+    <div class="container">
+        <div class="row-proj">
+
+            <!-- OVERVIEW -->
+            <div class="about-col-2-proj-top">
+                <h1 class="sub-title-about">Overview</h1>
+                <p id="whatissolar">
+                    I competed in the Siemens <span class="killer"><b>#KicksForEdge</b></span> 72-hour hackathon,
+                    collaborating with a global team to solve a real industrial automation problem:
+                    <span class="killer"><b>conveyor misdirection</b></span>.  
+                    European warehouses lose <b>€2–5 billion/year</b> due to misrouted parcels.  
+                    Our task: transform unstructured PLC logs into a system that technicians can actually use.
+                </p>
+
+                <div class="solar_des">
+                    <div class="solar_arr">
+                        <img src="images/ex_log.png">
+                        <p>Raw PLC logs with hidden faults.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROBLEM -->
+            <div class="about-col-2-proj">
+                <h1 class="sub-title-about">Why This Problem Matters</h1>
+                <img src="images/hack_problem.jpg">
+                <p>
+                    Warehouse technicians manually sift through <span class="killer"><b>millions of log lines</b></span>
+                    across dozens of PLCs.  
+                    Unflagged errors cause conveyor arms to misroute packages without triggering alarms.
+                    These “silent” failures accumulate into enormous financial loss.
+                </p>
+                <p>
+                    Our research showed that Germany alone reported 
+                    <b>44,406 operational complaints</b> in 2024 related to delayed/misdirected parcels.  
+                    (<i>Source included in slide deck</i>)
+                </p>
+            </div>
+
+            <!-- SOLUTION -->
+            <div class="about-col-3-proj">
+                <h1 class="sub-title-about">Our Solution</h1>
+
+                <div class="elec_syst_pics">
+                    <div>
+                        <img src="images/log_uploader.png">
+                        <p>log uploader</p>
+                    </div>
+                    <div>
+                        <img src="images/node-red.png">
+                        <p>Node-RED Log Parser</p>
+                    </div>
+                    <div>
+                        <img src="images/opensearchdashboard.png">
+                        <p>OpenSearch Dashboard</p>
+                    </div>
+                </div>
+                <p class="ele_sys_disc">
+                    We built a full pipeline using <b>Node-RED → OpenSearch → Dashboards</b>:
+                </p>
+
+                <ul style="color:#ababab; margin-left:15px; line-height:1.8;">
+                    <li><b>Automated log ingestion</b> for text/ZIP PLC logs</li>
+                    <li><b>Custom parser</b> that cleans, extracts, and formats raw strings into JSON</li>
+                    <li><b>Device, alarm, and routing analysis</b> to identify common failure clusters</li>
+                    <li><b>Interactive dashboards</b> for non-engineers to visualize trends instantly</li>
+                </ul>
+
+                <p>
+                   With our pipeline, a process that previously took technicians <b>7 days</b> could now be performed in <b>10 minutes</b>.
+                </p>
+            </div>
+
+            <!-- TECH STACK -->
+            <div class="about-col-2-proj">
+                <h1 class="sub-title-about">Technology Stack</h1>
+
+                <img src="images/hack_stack.jpg">
+
+                <p>
+                    ✔ <b>Node-RED</b> – ingestion tool, drag-and-drop user interface  
+                    ✔ <b>JavaScript</b> – parsing logic for semi-structured PLC logs  
+                    ✔ <b>OpenSearch</b> – database + indexing engine  
+                    ✔ <b>OpenSearch Dashboards</b> – visualization & analytics  
+                    ✔ <b>Siemens Industrial Edge</b> – deployment & future scaling  
+                </p>
+            </div>
+
+            <!-- PIPELINE DIAGRAM -->
+            <div class="about-col-2-proj">
+                <h1 class="sub-title-about">Pipeline Architecture</h1>
+                <img src="images/hack_flow.jpg">
+
+                <p>
+                    The system was designed like an industrial control loop:
+                </p>
+
+                <ol style="color:#ababab; margin-left:15px; line-height:1.8;">
+                    <li><b>Technicians upload logs</b> (txt or zip)</li>
+                    <li><b>Node-RED normalizes data</b> into structured JSON</li>
+                    <li><b>OpenSearch indexes the dataset</b></li>
+                    <li><b>Dashboards visualize alarms</b> by device, frequency, severity</li>
+                </ol>
+            </div>
+             
+
+            <!-- FUTURE VISION -->
+            <div class="about-col-2-proj-EL">
+                <h1 class="sub-title-about">Future Vision</h1>
+                <div class="EL">
+                    <div>
+                        <img src="images/AI chatbot.jpg">
+                        <p>AI Chatbot Assistant</p>
+                    </div>
+                </div>
+
+                <p id="EL">
+                    With the unified dataset, the next step is applying <b>Edge AI models</b> to detect 
+                    anomalies before they become misdirection events.  
+                    A chatbot interface over OpenSearch gives technicians instant,
+                    conversational access to system history and root-cause explanations.
+                </p>
+            </div>
+
+            <!-- PIPELINE DIAGRAM -->
+            <div class="about-col-2-proj-slide">
+                <h1 class="sub-title-about">Slide deck</h1>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS5mwpaCAgqJ-YVG-Q6NbLSwoeqrQohBW5y8E-FmmCObVBWjPkm-z9p3il6TG2y0g/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+        <h1 class="sub-title">Pictures</h1>
+        <div class="scroll-container">
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_2855.jpg">
+            </div>
+            <div class="work">
+                <img src="images/HAK00011.JPG">
+            </div>
+            <div class="work">
+                <img src="images/HAK00013.JPG">
+            </div>
+            <div class="work">
+                <img src="images/HAK00016.JPG">
+            </div>
+            <div class="work">
+                <img src="images/HAK00010.JPG">
+            </div>
+            <div class="work">
+                <img src="images/HAK00020.JPG">
+            </div>
+            <div class="work">
+                <img src="images/DSCF0420_1.jpg">
+            </div>
+            <div class="work">
+                <img src="images/Bild (1).jpg">
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> senrinakamura60@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+1 781 539-3225</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/senri-nakamura-b22854242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SenriNakamura" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/Resume_v2.pdf" download class="btn btn2" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="lightbox" class="lightbox">
+  <img id="lightboxImg" alt="">
+</div>
+
+<script>
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lightboxImg");
+
+  document.querySelectorAll("a.zoom").forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      lbImg.src = a.getAttribute("href");
+      lb.classList.add("show");
+    });
+  });
+
+  lb.addEventListener("click", () => lb.classList.remove("show"));
+</script>
