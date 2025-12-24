@@ -932,6 +932,9 @@ nav ul li #resume_phone {
 }
 
 @media only screen and (max-width: 600px){
+    .pictures-sec{
+        display: none;
+    }
     .work-list {
         display: flex;
         flex-direction: column;
