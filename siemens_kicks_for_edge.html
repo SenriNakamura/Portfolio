@@ -137,39 +137,64 @@
 </div>
 
 
-            <!-- SOLUTION -->
-            <div class="about-col-3-proj">
-                <h1 class="sub-title-about">Our Solution</h1>
+<!-- SOLUTION -->
+<div class="about-col-3-proj solution">
+  <h1 class="sub-title-about">Our Solution</h1>
 
-                <div class="elec_syst_pics">
-                    <div>
-                        <img src="images/log_uploader.png">
-                        <p>log uploader</p>
-                    </div>
-                    <div>
-                        <img src="images/node-red.png">
-                        <p>Node-RED Log Parser</p>
-                    </div>
-                    <div>
-                        <img src="images/opensearchdashboard.png">
-                        <p>OpenSearch Dashboard</p>
-                    </div>
-                </div>
-                <p class="ele_sys_disc">
-                    We built a full pipeline using <b>Node-RED → OpenSearch → Dashboards</b>:
-                </p>
+  <div class="solution-grid">
+    <!-- LEFT: text -->
+    <div class="solution-left">
+      <p class="solution-lead">
+        We built a full pipeline using <b>Node-RED → OpenSearch → Dashboards</b>.
+      </p>
 
-                <ul style="color:#ababab; margin-left:15px; line-height:1.8;">
-                    <li><b>Automated log ingestion</b> for text/ZIP PLC logs</li>
-                    <li><b>Custom parser</b> that cleans, extracts, and formats raw strings into JSON</li>
-                    <li><b>Device, alarm, and routing analysis</b> to identify common failure clusters</li>
-                    <li><b>Interactive dashboards</b> for non-engineers to visualize trends instantly</li>
-                </ul>
+      <ul class="solution-list">
+        <li><b>Automated log ingestion</b> for text/ZIP PLC logs</li>
+        <li><b>Custom parser</b> that cleans, extracts, and formats raw strings into JSON</li>
+        <li><b>Device, alarm, and routing analysis</b> to identify common failure clusters</li>
+        <li><b>Interactive dashboards</b> for non-engineers to visualize trends instantly</li>
+      </ul>
 
-                <p>
-                   With our pipeline, a process that previously took technicians <b>7 days</b> could now be performed in <b>10 minutes</b>.
-                </p>
-            </div>
+      <div class="solution-impact">
+        <div class="impact-label">Impact</div>
+        <div class="impact-value">
+          Reduced troubleshooting from <b>7 days</b> to <b>10 minutes</b>.
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: cards -->
+    <div class="solution-cards">
+      <div class="solution-card">
+        <div class="card-top">
+          <span class="step">01</span>
+          <span class="card-title">Log Uploader</span>
+        </div>
+        <img src="images/log_uploader.png" alt="Log uploader UI">
+        <p class="card-caption">Upload PLC logs (TXT/ZIP) for processing.</p>
+      </div>
+
+      <div class="solution-card">
+        <div class="card-top">
+          <span class="step">02</span>
+          <span class="card-title">Node-RED Parser</span>
+        </div>
+        <img src="images/node-red.png" alt="Node-RED flow">
+        <p class="card-caption">Clean + parse raw strings into structured JSON.</p>
+      </div>
+
+      <div class="solution-card">
+        <div class="card-top">
+          <span class="step">03</span>
+          <span class="card-title">OpenSearch Dashboard</span>
+        </div>
+        <img src="images/opensearchdashboard.png" alt="OpenSearch dashboard">
+        <p class="card-caption">Searchable insights + trend views for technicians.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <!-- TECH STACK -->
             <div class="about-col-2-proj">
@@ -183,23 +208,6 @@
                     ✔ <b>Siemens Industrial Edge</b> – deployment & future scaling  
                 </p>
             </div>
-
-            <!-- PIPELINE DIAGRAM -->
-            <div class="about-col-2-proj">
-                <h1 class="sub-title-about">Pipeline Architecture</h1>
-
-                <p>
-                    The system was designed like an industrial control loop:
-                </p>
-
-                <ol style="color:#ababab; margin-left:15px; line-height:1.8;">
-                    <li><b>Technicians upload logs</b> (txt or zip)</li>
-                    <li><b>Node-RED normalizes data</b> into structured JSON</li>
-                    <li><b>OpenSearch indexes the dataset</b></li>
-                    <li><b>Dashboards visualize alarms</b> by device, frequency, severity</li>
-                </ol>
-            </div>
-             
 
             <!-- FUTURE VISION -->
             <div class="about-col-2-proj-EL">
