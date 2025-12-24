@@ -56,24 +56,87 @@
     <div class="container">
         <div class="row-proj">
 
-            <!-- OVERVIEW -->
-            <div class="about-col-2-proj-top">
-                <h1 class="sub-title-about">Overview</h1>
-                <p id="whatissolar">
-                    I competed in the Siemens <span class="killer"><b>#KicksForEdge</b></span> 72-hour hackathon,
-                    collaborating with a global team to solve a real industrial automation problem:
-                    <span class="killer"><b>conveyor misdirection</b></span>.  
-                    European warehouses lose <b>€2–5 billion/year</b> due to misrouted parcels.  
-                    Our task: transform unstructured PLC logs into a system that technicians can actually use.
-                </p>
+<!-- OVERVIEW -->
+<div class="about-col-2-proj-top">
+  <h1 class="sub-title-about">Overview</h1>
 
-                <div class="solar_des">
-                    <div class="solar_arr">
-                        <img src="images/ex_log.png">
-                        <p>Raw PLC logs with hidden faults.</p>
-                    </div>
-                </div>
-            </div>
+  <div class="overview-hero">
+    <div class="overview-copy">
+      <p class="overview-lead">
+        I competed as a <span class="killer"><b>global finalist</b></span> in Siemens
+        <span class="killer"><b>#KicksForEdge</b></span>, a 72-hour hackathon held at
+        <span class="killer"><b>Munich Urban Colab</b></span>. The event was part of
+        <span class="killer"><b>IPCEI-CIS</b></span>, advancing interoperable cloud–edge technologies.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">Global Finalist</span>
+        <span class="pill">Munich Urban Colab</span>
+        <span class="pill">IPCEI-CIS</span>
+        <span class="pill">Industrial Edge</span>
+      </div>
+
+      <div class="mini-grid">
+        <div class="mini-card">
+          <div class="mini-title">Partner</div>
+          <div class="mini-value">Element Logic Germany</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Track</div>
+          <div class="mini-value">Edge log analytics</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Problem</div>
+          <div class="mini-value">Conveyor misdirection</div>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <h3>What we built</h3>
+        <p>
+          Hidden faults were buried inside raw PLC logs even when the system reported “OK”.
+          Over 72 hours, we built an edge-based log analytics pipeline to convert unstructured logs
+          into actionable technician insights.
+        </p>
+      </div>
+
+      <details class="overview-details">
+        <summary>Hackathon tracks (3)</summary>
+        <ul>
+          <li><b>Challenge 1</b> — Edge-enabled data analysis (Element Logic Germany)</li>
+          <li><b>Challenge 2</b> — Hydropower predictive maintenance (LEW Wasserkraft)</li>
+          <li><b>Challenge 3</b> — Robot QC from sensor data (HOLZ automation)</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="overview-side">
+      <div class="side-card">
+        <div class="side-title">Deployment</div>
+        <div class="side-value">
+          Siemens <b>SIMATIC IPC BX-39A</b><br>
+          Industrial Edge device
+        </div>
+      </div>
+
+      <div class="side-card code-card">
+        <div class="code-head">
+          <div>Example PLC log excerpt</div>
+          <div class="tag">synthetic</div>
+        </div>
+        <pre><code>[12:14:03.112] 'Logger 3 "UNIT-A" (192.168.1.50:5000)' connected!
+[12:14:03.129] [COM RECV] RECV STATUS 16#7001
+[12:14:03.145] [COM FILL] 01|CV|000101|N|FL|000000//0000|...
+[12:14:03.169] [COM RECV] CV|02|000000|A|5|000002//...|SR|...
+[12:14:03.332] [COM RECV] CV|02|000000|R|30|000000//...|SR|...
+[12:14:03.387] FIFO warning: buffer usage 85%</code></pre>
+        <div class="code-foot">Synthetic data only. Used to demonstrate parsing and fault surfacing.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
             <!-- PROBLEM -->
             <div class="about-col-2-proj">
