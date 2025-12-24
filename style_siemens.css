@@ -48,7 +48,7 @@ body{
     z-index: 2;
 }
 
-#headerany optional. Fine.
+
 #header::before{
     content:"";
     position:absolute;
@@ -608,23 +608,6 @@ span.killer{
         flex-basis: 100%;
         line-height: 1.6;   
     }
-    .elec_syst_pics {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    
-    .elec_syst_pics img {
-        max-width: 100%; 
-        height: 240px;
-        border-radius: 10px;
-    }
-    
-    .elec_syst_pics iframe{
-        max-width: 100%;
-        border-radius: 15px;
-        height: 240px;
-    }
     
     #about{
         padding: 50px 0;
@@ -1025,25 +1008,6 @@ nav ul li #resume_phone {
         flex-basis: 100%;
         line-height: 1.6;
         font-size: 12px;   
-    }
-    .elec_syst_pics {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    
-    .elec_syst_pics img {
-        max-width: 100%; 
-        height: 120px;
-        border-radius: 10px;
-    }
-    
-    .elec_syst_pics iframe{
-        max-width: 100%;
-        border-radius: 15px;
-        height: 120px;
     }
     
     #about{
