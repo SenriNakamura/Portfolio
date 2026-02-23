@@ -11,7 +11,7 @@ It showcases my projects, technical experience, and entrepreneurial work across 
 
 ## 🚀 Tech Stack
 - HTML, CSS, JavaScript
-- Deployed on Hostinger
+- Deployed on Github
 - Domain: senrinakamura.xyz
 
 ## 📂 Structure
